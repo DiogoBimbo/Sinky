@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap');
+
+/* fade-in */
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+
+  .fadeIn {
+    -webkit-animation: fadeIn 1.5s ease-in-out;
+    -moz-animation: fadeIn 1.5s ease-in-out;
+    -o-animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out;
+    }
+/* fim fade-in */
+
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+nav{
+  transition: all 0.5s;
+}
+
+
+
+.pequena{
+  width: 60px;
+  position: fixed;
+  top: -1px;
+}
+
+#logo{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.logo2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+#logo-footer{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.titulo{
+    font-weight: 800;
+    
+}
+
+#titulo-spec{
+    margin-top: 120px;
+    font-weight: 800;
+}
+.hvr-underline-from-center:before{
+    background: #ffffff !important;
+}
+
+p.text1{
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.margin-typing{
+    margin-top: 25%;
+}
+
+/* anmimação do typing */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 28em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    font-weight: 300;  
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+/* fim da animação do typing */
+
+.anim-typewriter1{
+    animation: typewriter 4s steps(55) 4s 1 normal both,
+               blinkTextCursor 500ms steps(55) infinite normal;
+  }
+  @keyframes typewriter1{
+    from{width: 0;}
+    to{width: 26em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+  @keyframes animate
+{
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
+.card img{
+    width: 200px;
+    margin-top: 10%;
+}
+
+#botao-demons{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+    
+}
+
+#botao-sucess{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.dev{
+    color:#ff0000;
+    font-size: 18px;
+}
+
+#type-banner{
+    height: 100vh;
+}
+
+
+/* particulas */
+
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js{
+    width: 100%;
+    height: 100vh;
+ 
+  }
+  
+/* fim particulas */
+
+.card-title{
+  font-size: 17px;
+}
+
+.mt-6{
+  margin-top: 5%;
+}
+
+.mt-7{
+  margin-top:50%;
+}
+
+
+
+#carousel{
+  width: 100%;
+  height: 75vh;
+  background: #e5e5e5;
+}
+
+#titulo-carousel{
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 1px;;
+
+}
+
+#fundo{
+  overflow: hidden;
+
+}
+#fundo img{
+  width: 100%;
+  display: table;
+
+}
+
+#text-banner{
+  position: relative;
+  top:-50%;
+
+}
+
+.border{
+  border-right: #ff0000 1px;
+}
+
+
+#video{
+  height: 80%;
+}
+
+#prop{
+  position: relative;
+  top: -60px;
+}
+
+#card-prop{
+  margin-top: -70px;
+}
+
+#card-dev h2{
+  font-size: 20px;
+  color: #ff0000
+}
+
+.card1{
+  height: 400px;
+
+}
+
+h4{
+  font-size: 18px;
+}
+
+.card img{
+  width: 170px;
+}
+
+#image{
+  width: 100%;
+  height: 100vh;
+  background: url("../images/banner/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden
+}
+
+/* #horario{
+  position: relative;
+  left: -8%;
+} */
+
+#footer img{
+  width: 30px;
+}
+
+.aspas-left{
+  background: url(../images/icones/quotation-left.svg)
+}
+
+
+.aspas-right{
+  background: url(../images/icones/quotation-right.svg)
+}
+
+.class-border{
+  border-radius: 150px;
+}

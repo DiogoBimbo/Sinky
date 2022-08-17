@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="Sinky.real_home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sinky"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="1198" Height="1024">
+    <Grid Background="White">
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="25,406,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label Content="Sinky" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" Height="96" Width="194" FontSize="72" Padding="27,0,10,-2" FontFamily="/Sinky;component/Font/#Montserrat"/>
+        <Label x:Name="lblBemVindo" Content="Seja bem-vindo usuário" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="20" FontFamily="/Sinky;component/Font/#Montserrat"/>
+        <Rectangle Fill="#FFF65A5A" HorizontalAlignment="Right" Height="4" Margin="0,132,10,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="1178"/>
+        <Label x:Name="lblHora" Content="00:00" HorizontalAlignment="Left" Margin="1008,10,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" Height="96" Width="174" FontSize="72" Padding="27,0,10,-2"/>
+        <Label x:Name="lblDate" Content="00/00/0000" HorizontalAlignment="Left" Margin="808,39,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36"/>
+        <Label FontFamily="/Sinky;component/Font/#Montserrat" Content="Serviços do dia:" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="25,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="30,222,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente1" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="37,228,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente1" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="213,228,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,304,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ1_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,287,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc1_1" Content="Adriano" HorizontalAlignment="Left" Margin="433,287,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,348,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ1_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,331,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc1_2" Content="Adriano" HorizontalAlignment="Left" Margin="433,331,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="30,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente2" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="37,415,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente2" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="213,415,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,491,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ2_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,474,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc2_1" Content="Adriano" HorizontalAlignment="Left" Margin="433,474,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,535,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ2_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,518,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc2_2" Content="Adriano" HorizontalAlignment="Left" Margin="433,518,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblLogin" Content="Seja bem-vindo usuário" HorizontalAlignment="Left" Margin="369,58,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="20" FontFamily="/Sinky;component/Font/#Montserrat" Visibility="Hidden"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="25,782,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="25,595,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="30,598,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente3" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="37,604,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente3" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="213,604,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,680,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ3_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,663,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc3_1" Content="Adriano" HorizontalAlignment="Left" Margin="433,663,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,724,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ3_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,707,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc3_2" Content="Adriano" HorizontalAlignment="Left" Margin="433,707,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="30,785,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente4" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="37,791,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente4" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="213,791,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,867,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ4_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,850,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc4_1" Content="Adriano" HorizontalAlignment="Left" Margin="433,850,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="153,911,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ4_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="37,894,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc4_2" Content="Adriano" HorizontalAlignment="Left" Margin="433,894,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="627,406,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="627,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="632,222,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente5" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="639,228,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente5" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="815,228,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,304,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ5_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,287,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc5_1" Content="Adriano" HorizontalAlignment="Left" Margin="1035,287,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,348,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ5_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,331,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc5_2" Content="Adriano" HorizontalAlignment="Left" Margin="1035,331,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="632,409,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente6" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="639,415,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente6" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="815,415,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,491,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ6_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,474,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc6_1" Content="Adriano" HorizontalAlignment="Left" Margin="1035,474,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,535,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ6_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,518,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc6_2" Content="Adriano" HorizontalAlignment="Left" Margin="1035,518,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="627,782,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="#FFCDCDCD" HorizontalAlignment="Left" Height="175" Margin="627,595,0,0" Stroke="Black" VerticalAlignment="Top" Width="541" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="632,598,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente7" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="639,604,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente7" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="815,604,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,680,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ7_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,663,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc7_1" Content="Adriano" HorizontalAlignment="Left" Margin="1035,663,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,724,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ7_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,707,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc7_2" Content="Adriano" HorizontalAlignment="Left" Margin="1035,707,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="168" Margin="632,785,0,0" Stroke="Black" VerticalAlignment="Top" Width="531" StrokeThickness="0" RadiusY="8.5" RadiusX="8.5"/>
+        <Label x:Name="lblHoraCliente8" FontFamily="/Sinky;component/Font/#Montserrat SemiBold" Content="00:00" HorizontalAlignment="Left" Margin="639,791,0,0" VerticalAlignment="Top" Foreground="#FFF65A5A" FontSize="36"/>
+        <Label x:Name="lblNomeCliente8" Content="Cleide Cunha" HorizontalAlignment="Left" Margin="815,791,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="36" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,867,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ8_1" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,850,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc8_1" Content="Adriano" HorizontalAlignment="Left" Margin="1035,850,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Rectangle Fill="#FF5C5C5C" HorizontalAlignment="Left" Height="1" Margin="755,911,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="293"/>
+        <Label x:Name="lblNomeServ8_2" Content="Corte de Cabelo" HorizontalAlignment="Left" Margin="639,894,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+        <Label x:Name="lblNomeFunc8_2" Content="Adriano" HorizontalAlignment="Left" Margin="1035,894,0,0" VerticalAlignment="Top" Foreground="#FF5C5C5C" FontSize="18" FontFamily="/Sinky;component/Font/#Montserrat" Background="White"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18620F87-05DB-48EF-9C8B-ECAFC5EE6F31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sinky</RootNamespace>
+    <AssemblyName>Sinky</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="funcClose.cs" />
+    <Compile Include="real_home.xaml.cs">
+      <DependentUpon>real_home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shut.xaml.cs">
+      <DependentUpon>shut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="teseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>teseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Page Include="home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="home.xaml.cs">
+      <DependentUpon>home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="real_home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="BD.xsc">
+      <DependentUpon>BD.xsd</DependentUpon>
+    </None>
+    <None Include="BD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD.xss">
+      <DependentUpon>BD.xsd</DependentUpon>
+    </None>
+    <None Include="teseDataSet.xsc">
+      <DependentUpon>teseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="teseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>teseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="teseDataSet.xss">
+      <DependentUpon>teseDataSet.xsd</DependentUpon>
+    </None>
+    <Resource Include="Font\Montserrat-Regular.ttf" />
+    <Resource Include="Font\Montserrat-Black.ttf" />
+    <Resource Include="Font\Montserrat-BlackItalic.ttf" />
+    <Resource Include="Font\Montserrat-Bold.ttf" />
+    <Resource Include="Font\Montserrat-BoldItalic.ttf" />
+    <Resource Include="Font\Montserrat-ExtraBold.ttf" />
+    <Resource Include="Font\Montserrat-ExtraBoldItalic.ttf" />
+    <Resource Include="Font\Montserrat-ExtraLight.ttf" />
+    <Resource Include="Font\Montserrat-ExtraLightItalic.ttf" />
+    <Resource Include="Font\Montserrat-Italic.ttf" />
+    <Resource Include="Font\Montserrat-Light.ttf" />
+    <Resource Include="Font\Montserrat-LightItalic.ttf" />
+    <Resource Include="Font\Montserrat-Medium.ttf" />
+    <Resource Include="Font\Montserrat-MediumItalic.ttf" />
+    <Resource Include="Font\Montserrat-SemiBold.ttf" />
+    <Resource Include="Font\Montserrat-SemiBoldItalic.ttf" />
+    <Resource Include="Font\Montserrat-Thin.ttf" />
+    <Resource Include="Font\Montserrat-ThinItalic.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\bg-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\substract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\menu\menu-shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Screenshot %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\turn-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8-restart-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Computer-Hardware-Restart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Font\OFL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\enter.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
